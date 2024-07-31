@@ -1,0 +1,256 @@
+{
+  "main": {
+    "id": "701a0ab15eaaf78d",
+    "type": "split",
+    "children": [
+      {
+        "id": "3fd4790fb5f1aa04",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c600fd6056dd2270",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9e04144fc4bb563e",
+    "type": "split",
+    "children": [
+      {
+        "id": "4973c70594efbdd7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7bd9c9ba8d92b45",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e9cdc07836074bd1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": true,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6dc4cde6adfe6edd",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "alphabetical",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "f4d35e950eef317c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "12d0432c805d0197",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "129aca3c603447a4",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 246.5
+  },
+  "right": {
+    "id": "fdc48957d5d269ad",
+    "type": "split",
+    "children": [
+      {
+        "id": "fa19ca89b34749da",
+        "type": "tabs",
+        "dimension": 58.00970873786409,
+        "children": [
+          {
+            "id": "ba61cdde39569b87",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "8121efe5b9e7a4da",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {}
+            }
+          },
+          {
+            "id": "3dd567ead1a19ef7",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          },
+          {
+            "id": "5dcc22f2b0cf73af",
+            "type": "leaf",
+            "state": {
+              "type": "tasks_timeline_view",
+              "state": {}
+            }
+          },
+          {
+            "id": "06e81e699810b062",
+            "type": "leaf",
+            "state": {
+              "type": "timeline",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      },
+      {
+        "id": "3730b7c6c7cee59c",
+        "type": "tabs",
+        "dimension": 41.99029126213591,
+        "children": [
+          {
+            "id": "3b0cf691219c53e5",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 334.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-kanban:创建新看板": false,
+      "obsidian-projects:打开项目": false,
+      "workspaces:管理工作区布局": false,
+      "switcher:打开快速切换": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "graph:查看关系图谱": false,
+      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
+      "obsidian-memos:Thino": false,
+      "remotely-save:Remotely Save": false,
+      "templater-obsidian:Templater": false,
+      "dbfolder:创建一个新数据库表": false,
+      "obsidian-day-planner:Timeline": false
+    }
+  },
+  "active": "06e81e699810b062",
+  "lastOpenFiles": [
+    "0 obsidian学习如何记笔记/OB的鼓捣日记.md",
+    "0 obsidian学习如何记笔记/插件/插件-outliner.md",
+    "1 日记/2024/weekly/2024-W31.md",
+    "1 日记/2024/weekly/2024-W30.md",
+    "0 obsidian学习如何记笔记/OB的教程记录.md",
+    "2 学习/电力计算/matpower.md",
+    "1 日记/2024/2024-07-30.md",
+    "1 日记/2024/2024-07-29.md",
+    "0 obsidian学习如何记笔记/插件/插件-dataview.md",
+    "0 obsidian学习如何记笔记/插件/插件-MetaBind.md",
+    "模板/在用/日记模板.md",
+    "0 obsidian学习如何记笔记/插件/插件-tasks.md",
+    "1 日记/2024/2024-03-10.md",
+    "1 日记/2024/weekly/2024-W27.md",
+    "1 日记/2024/weekly/2024-W28.md",
+    "1 日记/2024/weekly/2024-W26.md",
+    "1 日记/日记总览.md",
+    "0 obsidian学习如何记笔记/插件/插件-TasksCalendarWrapper.md",
+    "模板/在用/日记模板 0728.md",
+    "模板/在用/日记模板 0730.md",
+    "1 日记/2024/2024-07-27.md",
+    "1 日记/2024/2024-07-24.md",
+    "1 年月周计划和月报周报/2024年.md",
+    "1 年月周计划和月报周报/2023年.md",
+    "1 日记/2024/2024-07-23.md",
+    "1 日记/2024/2024-02-27.md",
+    "1 日记/2024/daily",
+    "2 学习/电力计算/_附件/matpower层级示意图.png",
+    "2 学习/电力计算/_附件/Pasted image 20240707114544.png",
+    "3 论文库/顶刊",
+    "3 论文库/一般",
+    "3 论文库/上古神作",
+    "移动端附件/image.jpg",
+    "移动端附件/IMG_9457.png",
+    "移动端附件",
+    "8 生活-杂/其他文档",
+    "8 生活-杂/杂文",
+    "8 生活-杂/书",
+    "5 项目管理/_附件/成都负荷预测1.jpg",
+    "2 学习/_附件/Pasted image 20240301171421.png",
+    "3 科研idea/_附件/Pasted image 20240303180422.png",
+    "1 日记/2024/weekly",
+    "2 学习/ComputerScience/前端",
+    "2 学习/电力计算/_附件/Pasted image 20231116144152.png",
+    "_附件/多智能体.png",
+    "_附件/状态转换.png",
+    "未命名.canvas",
+    "8 生活-杂/我的生活应当是什么样的？/what is my life.canvas",
+    "5 项目管理/aoes/电压监测.canvas",
+    "5 项目管理/aoes/demo-aoe.canvas",
+    "what is my life.canvas"
+  ]
+}
