@@ -12,7 +12,7 @@
   "readableLineLength": false,
   "foldIndent": true,
   "livePreview": true,
-  "defaultViewMode": "preview",
+  "defaultViewMode": "source",
   "spellcheck": false,
   "spellcheckLanguages": null,
   "focusNewTab": true,

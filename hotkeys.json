@@ -12,56 +12,22 @@
   "obsidian-emoji-toolbar:emoji-picker:open-picker": [
     {
       "modifiers": [
-        "Mod"
-      ],
-      "key": "E"
-    }
-  ],
-  "editor:save-file": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "S"
-    }
-  ],
-  "obsidian-excalidraw-plugin:insert-link-to-element": [],
-  "markdown:toggle-preview": [
-    {
-      "modifiers": [
         "Alt"
       ],
       "key": "E"
     }
   ],
-  "workspace:toggle-pin": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "L"
-    }
-  ],
-  "editor:toggle-bullet-list": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "W"
-    }
-  ],
-  "tag-pane:open": [],
+  "editor:save-file": [],
   "file-explorer:new-file-in-new-pane": [],
-  "workspace:next-tab": [
+  "workspace:new-tab": [],
+  "insert-template": [
     {
       "modifiers": [
-        "Ctrl"
+        "Alt"
       ],
-      "key": "PageDown"
+      "key": "T"
     }
   ],
-  "obsidian-advanced-slides:open-advanced-slides-preview": [],
-  "easy-typing-obsidian:easy-typing-delete-blank-line": [],
   "editor:toggle-checklist-status": [],
   "editor:cycle-list-checklist": [
     {
@@ -71,5 +37,26 @@
       "key": "L"
     }
   ],
-  "templater-obsidian:insert-templater": []
+  "workspace:next-tab": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "PageDown"
+    }
+  ],
+  "easy-typing-obsidian:easy-typing-delete-blank-line": [],
+  "obsidian-citation-plugin:insert-citation": [],
+  "templater-obsidian:insert-templater": [],
+  "obsidian-excalidraw-plugin:insert-link": [],
+  "obsidian-excalidraw-plugin:insert-link-to-element": [],
+  "obsidian-excalidraw-plugin:save": [],
+  "obsidian-git:push": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "S"
+    }
+  ]
 }

@@ -1,0 +1,8 @@
+{
+    "pinned": [
+      "obsidian-tasks-plugin:edit-task",
+      "obsidian-git:backup-and-close",
+      "obsidian-git:open-git-view",
+      "editor:rename-heading"
+    ]
+  }

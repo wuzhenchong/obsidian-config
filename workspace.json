@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "97502599372a7c69",
+        "id": "74a0d5161aebc7a4",
         "type": "tabs",
         "children": [
           {
-            "id": "389fa467824a292f",
+            "id": "3656670bd24c6bcc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1 日记/2024/2024-08-01.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -32,6 +27,7 @@
       {
         "id": "4973c70594efbdd7",
         "type": "tabs",
+        "dimension": 70.4752275025278,
         "children": [
           {
             "id": "e7bd9c9ba8d92b45",
@@ -50,10 +46,10 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": false,
-                "explainSearch": true,
-                "collapseAll": false,
-                "extraContext": false,
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": true,
                 "sortOrder": "alphabetical"
               }
             }
@@ -75,7 +71,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1 日记/2024/2024-08-01.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -92,14 +87,13 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1 日记/2024/2024-08-01.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "129aca3c603447a4",
+            "id": "e2857e414c3dc578",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -107,42 +101,79 @@
             }
           }
         ]
+      },
+      {
+        "id": "a62436fed1737ec9",
+        "type": "tabs",
+        "dimension": 29.524772497472195,
+        "children": [
+          {
+            "id": "2f9f6d55ce3dd925",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": true,
+                  "showTags": false,
+                  "showAttachments": true,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": false,
+                  "showArrow": true,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 0.709947916666667,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.2378720730809643,
+                  "close": true
+                }
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 254.5
+    "width": 296.5
   },
   "right": {
     "id": "fdc48957d5d269ad",
     "type": "split",
     "children": [
       {
-        "id": "fa19ca89b34749da",
+        "id": "758cd0d19dcf5bb2",
         "type": "tabs",
-        "dimension": 58.00970873786409,
+        "dimension": 65.11627906976744,
         "children": [
           {
-            "id": "ba61cdde39569b87",
+            "id": "b7ff37f72596fc2f",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "1 日记/2024/2024-08-01.md"
-              }
+              "state": {}
             }
           },
           {
-            "id": "8121efe5b9e7a4da",
+            "id": "03d087ec6c09764f",
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {
-                "file": "1 日记/2024/2024-08-01.md"
-              }
+              "state": {}
             }
           },
           {
-            "id": "3dd567ead1a19ef7",
+            "id": "81572bd15604ac27",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -154,18 +185,10 @@
             }
           },
           {
-            "id": "5dcc22f2b0cf73af",
+            "id": "7a4748aeccab7b78",
             "type": "leaf",
             "state": {
               "type": "tasks_timeline_view",
-              "state": {}
-            }
-          },
-          {
-            "id": "06e81e699810b062",
-            "type": "leaf",
-            "state": {
-              "type": "timeline",
               "state": {}
             }
           }
@@ -173,12 +196,12 @@
         "currentTab": 3
       },
       {
-        "id": "3730b7c6c7cee59c",
+        "id": "6bdea70e51901c13",
         "type": "tabs",
-        "dimension": 41.99029126213591,
+        "dimension": 34.883720930232556,
         "children": [
           {
-            "id": "3b0cf691219c53e5",
+            "id": "5f23b09179a558a6",
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -189,79 +212,84 @@
       }
     ],
     "direction": "horizontal",
-    "width": 334.5
+    "width": 346.5
   },
   "left-ribbon": {
     "hiddenItems": {
       "quickadd:QuickAdd": false,
       "obsidian-kanban:创建新看板": false,
       "obsidian-projects:打开项目": false,
-      "workspaces:管理工作区布局": false,
+      "dbfolder:创建一个新数据库表": false,
+      "obsidian-day-planner:Timeline": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-memos:Thino": false,
       "switcher:打开快速切换": false,
+      "workspaces:管理工作区布局": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "graph:查看关系图谱": false,
-      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
-      "obsidian-memos:Thino": false,
-      "templater-obsidian:Templater": false,
-      "dbfolder:创建一个新数据库表": false,
-      "obsidian-day-planner:Timeline": false
+      "open-gate:flomo": false,
+      "open-gate:滴答清单": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "389fa467824a292f",
+  "active": "7a4748aeccab7b78",
   "lastOpenFiles": [
-    "1 日记/2024/weekly/2024-W31.md",
-    "1 日记/2024/2024-08-01.md",
-    "1 日记/日记总览.md",
-    "1 日记/科研记录.md",
-    "0 obsidian学习如何记笔记/OB的鼓捣日记.md",
-    "0 obsidian学习如何记笔记/插件/插件-outliner.md",
-    "1 日记/2024/weekly/2024-W30.md",
-    "0 obsidian学习如何记笔记/OB的教程记录.md",
-    "2 学习/电力计算/matpower.md",
-    "1 日记/2024/2024-07-30.md",
-    "1 日记/2024/2024-07-29.md",
-    "0 obsidian学习如何记笔记/插件/插件-dataview.md",
+    "Inbox.md",
+    "网页-滴答清单.md",
     "0 obsidian学习如何记笔记/插件/插件-MetaBind.md",
-    "模板/在用/日记模板.md",
-    "0 obsidian学习如何记笔记/插件/插件-tasks.md",
-    "1 日记/2024/2024-03-10.md",
-    "1 日记/2024/weekly/2024-W27.md",
-    "1 日记/2024/weekly/2024-W28.md",
-    "1 日记/2024/weekly/2024-W26.md",
-    "0 obsidian学习如何记笔记/插件/插件-TasksCalendarWrapper.md",
-    "模板/在用/日记模板 0728.md",
-    "模板/在用/日记模板 0730.md",
-    "1 日记/2024/2024-07-27.md",
-    "1 日记/2024/2024-07-24.md",
-    "1 年月周计划和月报周报/2024年.md",
-    "1 年月周计划和月报周报/2023年.md",
-    "1 日记/2024/daily",
+    "0 obsidian学习如何记笔记/插件/插件-Annotator.md",
+    "2 学习/ComputerScience/git.md",
+    "0 obsidian学习如何记笔记/插件/插件-git.md",
+    "0 obsidian学习如何记笔记/Error同步出错记录.md",
+    "0 obsidian学习如何记笔记/解决方案/多端同步解决方案.md",
+    "5 项目管理/PLCC/Holding-IEC104协议开发.md",
+    "5 项目管理/3-PLCC开发.md",
+    "1 日记/2024/2024-07-31.md",
+    "2 学习/电力计算/matpower.md",
+    "1 日记/科研记录.md",
+    "_debug_remotely_save/sync_plans_hist_exported_on_1722513708000.md",
+    "_debug_remotely_save",
+    "2 学习/ComputerScience/_附件/git原理.png",
+    "0 obsidian学习如何记笔记/OB的教程记录.md",
+    "0 obsidian学习如何记笔记/OB的鼓捣日记.md",
+    "0 obsidian学习如何记笔记/myObsidian设计构思.md",
+    "1 日记/日记总览.md",
+    "见多识广/软件技巧/实用技巧.md",
+    "0 obsidian学习如何记笔记/插件/插件-StyleSetting.md",
+    "4 写论文/_附件/嵌入式EMS修改意见.png",
+    "4 写论文/移动端附件/059d5e0d8036b28215a9d6c6a64c64c.png",
+    "4 写论文/移动端附件",
+    "4 写论文/论文-嵌入式EMS.md",
+    "移动端附件/image.jpg",
+    "移动端附件/IMG_9457.png",
+    "2 学习/ComputerScience/_附件/git文件状态.png",
+    "2 学习/ComputerScience/_附件/Drawing 2024-07-31 15.16.05.excalidraw.md",
+    "2 学习/ComputerScience/_附件/Drawing 2024-07-31 15.15.47.excalidraw.md",
+    "2 学习/ComputerScience/_附件",
+    "5 项目管理/【Doing】宁波配网潮流.md",
+    "1 日记/2024/2024-07-29.md",
+    "TEST.md",
+    "0 obsidian学习如何记笔记/插件/插件-StyleSetting",
     "2 学习/电力计算/_附件/matpower层级示意图.png",
-    "2 学习/电力计算/_附件/Pasted image 20240707114544.png",
     "3 论文库/顶刊",
     "3 论文库/一般",
     "3 论文库/上古神作",
-    "移动端附件/image.jpg",
-    "移动端附件/IMG_9457.png",
-    "移动端附件",
-    "8 生活-杂/其他文档",
-    "8 生活-杂/杂文",
-    "8 生活-杂/书",
-    "5 项目管理/_附件/成都负荷预测1.jpg",
-    "2 学习/_附件/Pasted image 20240301171421.png",
-    "3 科研idea/_附件/Pasted image 20240303180422.png",
-    "1 日记/2024/weekly",
-    "2 学习/ComputerScience/前端",
-    "2 学习/电力计算/_附件/Pasted image 20231116144152.png",
-    "_附件/多智能体.png",
-    "_附件/状态转换.png",
-    "未命名.canvas",
+    "2 学习/电力计算/_附件/Pasted image 20240707114544.png",
     "8 生活-杂/我的生活应当是什么样的？/what is my life.canvas",
+    "8 生活-杂/书",
+    "8 生活-杂/杂文",
+    "8 生活-杂/其他文档",
+    "Excalidraw/未命名.canvas",
+    "5 项目管理/_附件/成都负荷预测1.jpg",
+    "3 科研idea/_附件/Pasted image 20240303180422.png",
+    "未命名.canvas",
+    "未命名 1.canvas",
     "5 项目管理/aoes/电压监测.canvas",
     "5 项目管理/aoes/demo-aoe.canvas",
+    "8 生活-杂/what is my life.canvas",
     "what is my life.canvas"
   ]
 }

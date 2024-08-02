@@ -3,8 +3,10 @@
     "aliases": "aliases",
     "cssclasses": "multitext",
     "tags": "tags",
-    "创建日期": "date",
-    "summary": "text",
+    "status": "multitext",
+    "priority": "number",
+    "打分": "number",
+    "研究方向": "multitext",
     "excalidraw-plugin": "text",
     "excalidraw-export-transparent": "checkbox",
     "excalidraw-mask": "checkbox",
@@ -23,14 +25,11 @@
     "excalidraw-css": "text",
     "excalidraw-autoexport": "text",
     "excalidraw-iframe-theme": "text",
-    "时间": "date",
+    "总结": "text",
+    "作者": "text",
     "excalidraw-export-embed-scene": "checkbox",
     "excalidraw-embeddable-theme": "text",
     "excalidraw-open-md": "checkbox",
-    "浪费时间": "number",
-    "exampleProperty": "text",
-    "今日状态": "multitext",
-    "高效工作8h": "checkbox",
-    "limit": "number"
+    "可取之处": "text"
   }
 }
