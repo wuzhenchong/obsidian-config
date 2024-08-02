@@ -1,13 +1,13 @@
 {
   "accentColor": "",
-  "cssTheme": "",
+  "cssTheme": "Blue Topaz",
   "theme": "moonstone",
   "interfaceFontFamily": "",
-  "baseFontSize": 18,
+  "baseFontSize": 20,
   "monospaceFontFamily": "Consolas",
   "nativeMenus": false,
   "translucency": false,
   "enabledCssSnippets": [],
   "showViewHeader": true,
-  "baseFontSizeAction": true
+  "baseFontSizeAction": false
 }
