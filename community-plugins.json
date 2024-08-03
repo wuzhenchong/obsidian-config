@@ -10,14 +10,11 @@
   "obsidian-memos",
   "obsidian-kanban",
   "obsidian-latex-suite",
-  "cmenu-plugin",
   "obsidian-mind-map",
   "obsidian-admonition",
   "multi-column-markdown",
-  "obsidian-tasks-plugin",
   "obsidian-projects",
   "templater-obsidian",
-  "remotely-save",
   "obsidian-banners",
   "obsidian-meta-bind-plugin",
   "dbfolder",
@@ -27,5 +24,6 @@
   "editing-toolbar",
   "obsidian-day-planner",
   "obsidian-outliner",
-  "obsidian-git"
+  "obsidian-tasks-plugin",
+  "remotely-save"
 ]
