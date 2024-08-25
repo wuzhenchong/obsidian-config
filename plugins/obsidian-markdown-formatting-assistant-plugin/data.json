@@ -1,0 +1,54 @@
+{
+  "triggerChar": "\\",
+  "sidePaneSideLeft": false,
+  "savedColors": [
+    "#c55e5e",
+    "#ff0000"
+  ],
+  "aviabileRegions": [
+    "textEdit",
+    "tabels",
+    "html",
+    "latex",
+    "greekLetters",
+    "colors",
+    "callouts"
+  ],
+  "regionSettings": [
+    {
+      "name": "textEdit",
+      "active": true,
+      "visible": true
+    },
+    {
+      "name": "tables",
+      "active": true,
+      "visible": false
+    },
+    {
+      "name": "html",
+      "active": true,
+      "visible": true
+    },
+    {
+      "name": "latex",
+      "active": true,
+      "visible": true
+    },
+    {
+      "name": "greekLetters",
+      "active": true,
+      "visible": true
+    },
+    {
+      "name": "colors",
+      "active": true,
+      "visible": true
+    },
+    {
+      "name": "callouts",
+      "active": true,
+      "visible": true
+    }
+  ]
+}

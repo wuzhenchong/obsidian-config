@@ -16,6 +16,6 @@
   "spellcheck": false,
   "spellcheckLanguages": null,
   "focusNewTab": true,
-  "propertiesInDocument": "hidden",
+  "propertiesInDocument": "visible",
   "showRibbon": true
 }

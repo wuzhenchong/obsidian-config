@@ -1,0 +1,1141 @@
+:root {
+  --text: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --text-editor: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-monospace:Menlo,SFMono-Regular,Consolas,"Roboto Mono",monospace;
+  --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+
+body {
+  --font-adaptive-normal: 18px;
+  --line-height:1.65;
+  /* 可通过下面的代码修改默认的编辑与预览视图下的内容区宽度 */  /* 可通过关闭 「设置---编辑器---显示---缩减栏宽」选项来增加内容区宽度 */ 
+  --max-width: 60rem; 
+  --line-width-adaptive: 60rem;
+  /* 表格中的表头设置 */
+  --table-header-size: 18px;
+  --table-header-weight: 500;
+}
+
+
+
+
+/* 添加本地字体 */
+@font-face {
+  font-family: 'HarmonyOS Sans Light';
+  src: local('HarmonyOS_Sans_Light') format('truetype');
+}
+
+
+
+
+/* 嵌入双向链接时的竖线与文本对齐 */
+.markdown-source-view.mod-cm6.is-readable-line-width .cm-line.HyperMD-list-line .internal-embed.image-embed, .markdown-source-view.mod-cm6.is-readable-line-width .cm-line>.internal-embed {
+  margin-left: -10px !important;
+}
+
+/* 实时编辑模式下行间距离 */
+.markdown-preview-view ol>li, .markdown-preview-view ul>li, .markdown-source-view ol>li, .markdown-source-view ul>li, .mod-cm6 .HyperMD-list-line.cm-line {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+
+
+
+/* 设置项选中状态时的颜色 */
+.checkbox-container.is-enabled {
+  background-color: #0A59F7 !important;
+}
+button.mod-cta {
+  background-color: #0A59F7;
+}
+button.mod-cta:hover {
+  background-color: rgba(10,89,247,.8);
+}
+
+
+html[lang=cn] body {
+  white-space: pre-wrap;
+  word-break: break-word;
+  word-wrap: break-word;
+  text-justify: inter-word;
+  word-wrap:inherit;
+}
+
+
+/* 标题改为粗体 */
+.cm-s-obsidian .cm-header-2 {
+  font-weight: bold;
+}
+.cm-s-obsidian .cm-header-3 {
+  font-weight: bold;
+}
+.cm-s-obsidian .cm-header-4 {
+  font-weight: bold;
+}
+.cm-s-obsidian .cm-header-5 {
+  font-weight: bold;
+}
+.cm-s-obsidian .cm-header-6 {
+  font-weight: bold;
+}
+.markdown-preview-view h2 {
+  font-weight: bold;
+}
+.markdown-preview-view h3 {
+  font-weight: bold;
+}
+.markdown-preview-view h4 {
+  font-weight: bold;
+}
+.markdown-preview-view h5 {
+  font-weight: bold;
+}
+.markdown-preview-view h6 {
+  font-weight: bold;
+}
+
+
+/* 文本选中颜色 */
+.theme-light {
+  --text-selection: rgba(10,89,267,.4);
+}
+
+/* 预览模式下的高亮 */
+.markdown-preview-view mark {
+	background-color: transparent !important;
+	color: #000 !important;
+	font-weight: 600;
+}
+.cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight {
+	background-color: transparent !important;
+	color: #000 !important;
+  /* font-weight: 600; */
+}
+
+
+/* 编辑和预览模式下文字间距与文字对齐 */
+.markdown-preview-view {
+  letter-spacing: .02em;
+  text-align: justify;
+  hyphens: auto;
+}
+.cm-s-obsidian .CodeMirror-line * {
+  letter-spacing: .02em;
+}
+
+/* 编辑模式下 标题上下添加距离*/
+.cm-s-obsidian pre.HyperMD-header {
+  /* padding: 2em 0; */
+  padding-block-start: 2em;
+  padding-block-end: 1em;
+}
+.CodeMirror-gutter-elt {
+  top: 16px;
+}
+
+.mod-cm6 .cm-editor .HyperMD-header-1, .mod-cm6 .cm-editor .HyperMD-header-2, .mod-cm6 .cm-editor .HyperMD-header-3, .mod-cm6 .cm-editor .HyperMD-header-4, .mod-cm6 .cm-editor .HyperMD-header-5, .mod-cm6 .cm-editor .HyperMD-header-6 {
+  padding-bottom: 1rem;
+  padding-top: 1.5rem;
+}
+
+
+/* a 链接样式 */
+a, .markdown-preview-view .internal-link {
+  text-decoration: none;
+  color: #0A59F7;
+  /* padding: 2px 0; */
+}
+.cm-s-obsidian span.cm-hmd-internal-link {
+  color: #0A59F7;
+}
+.markdown-preview-view mark .internal-link {
+  font-weight: 500;
+}
+.markdown-preview-view .internal-link:hover {
+  text-decoration: none;
+  background-color: rgba(51,112,255,.1);
+  padding: 2px 0;
+}
+
+.external-link:hover {
+  color: rgba(10,89,247,.8);
+  text-decoration: none;
+}
+
+/* 去掉 a 链接后面的 icon */
+.external-link {
+  background-image: none;
+  padding-right: 0;
+  text-decoration: none;
+  color: #0A59F7;
+}
+
+.cm-s-obsidian span.cm-url, .cm-s-obsidian span.cm-url:hover {
+  color: rgba(51,112,255,.8);
+}
+.cm-s-obsidian span.cm-link, .cm-s-obsidian span.cm-hmd-internal-link:hover {
+  text-decoration: none;
+}
+.cm-s-obsidian span.cm-url {
+  text-decoration: none;
+}
+
+.cm-s-obsidian span.cm-url:hover {
+  text-decoration: none;
+}
+
+
+/* 引用文件时，文件名前面会出现 “文档” icon */
+.markdown-preview-view a.internal-link::before {
+  margin-right: 4px;
+  margin-left: 2px;
+
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg t='1626093724345' class='icon' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='3856' width='200' height='200'%3E%3Cpath d='M896.5 328.5h-256c-13.3 0-24-10.7-24-24v-256c0-13.3 10.7-24 24-24s24 10.7 24 24v232h232c13.3 0 24 10.7 24 24s-10.7 24-24 24z' fill='%230A59F7' p-id='3857'%3E%3C/path%3E%3Cpath d='M896.5 1000.5h-768c-13.3 0-24-10.7-24-24v-928c0-13.3 10.7-24 24-24h512c6.4 0 12.5 2.5 17 7l256 256c4.5 4.5 7 10.6 7 17v672c0 13.3-10.7 24-24 24z m-744-48h720V314.4L630.6 72.5H152.5v880z' fill='%230A59F7' p-id='3858'%3E%3C/path%3E%3Cpath d='M704.5 792.5h-384c-13.3 0-24-10.7-24-24s10.7-24 24-24h384c13.3 0 24 10.7 24 24s-10.7 24-24 24zM704.5 632.5h-384c-13.3 0-24-10.7-24-24s10.7-24 24-24h384c13.3 0 24 10.7 24 24s-10.7 24-24 24zM704.5 472.5h-384c-13.3 0-24-10.7-24-24s10.7-24 24-24h384c13.3 0 24 10.7 24 24s-10.7 24-24 24zM448.5 312.5h-128c-13.3 0-24-10.7-24-24s10.7-24 24-24h128c13.3 0 24 10.7 24 24s-10.7 24-24 24z' fill='%230A59F7' p-id='3859'%3E%3C/path%3E%3C/svg%3E");
+  background-size: 16px 16px;
+  transform: translate(0, 3px);
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 16.8px;
+  width: 16.33px;
+}
+
+
+/* 实时预览模式下双向链接前面添加 icon  */
+.markdown-source-view.mod-cm6 .cm-hmd-internal-link .cm-underline::before {
+  margin-right: 4px;
+  margin-left: 2px;
+
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg t='1626093724345' class='icon' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='3856' width='200' height='200'%3E%3Cpath d='M896.5 328.5h-256c-13.3 0-24-10.7-24-24v-256c0-13.3 10.7-24 24-24s24 10.7 24 24v232h232c13.3 0 24 10.7 24 24s-10.7 24-24 24z' fill='%230A59F7' p-id='3857'%3E%3C/path%3E%3Cpath d='M896.5 1000.5h-768c-13.3 0-24-10.7-24-24v-928c0-13.3 10.7-24 24-24h512c6.4 0 12.5 2.5 17 7l256 256c4.5 4.5 7 10.6 7 17v672c0 13.3-10.7 24-24 24z m-744-48h720V314.4L630.6 72.5H152.5v880z' fill='%230A59F7' p-id='3858'%3E%3C/path%3E%3Cpath d='M704.5 792.5h-384c-13.3 0-24-10.7-24-24s10.7-24 24-24h384c13.3 0 24 10.7 24 24s-10.7 24-24 24zM704.5 632.5h-384c-13.3 0-24-10.7-24-24s10.7-24 24-24h384c13.3 0 24 10.7 24 24s-10.7 24-24 24zM704.5 472.5h-384c-13.3 0-24-10.7-24-24s10.7-24 24-24h384c13.3 0 24 10.7 24 24s-10.7 24-24 24zM448.5 312.5h-128c-13.3 0-24-10.7-24-24s10.7-24 24-24h128c13.3 0 24 10.7 24 24s-10.7 24-24 24z' fill='%230A59F7' p-id='3859'%3E%3C/path%3E%3C/svg%3E");
+  background-size: 16px 16px;
+  transform: translate(0, 3px);
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 16.8px;
+  width: 16.33px;
+}
+/* 取消 hover 时的下划线 */
+.markdown-source-view.mod-cm6 .cm-underline:hover {
+  text-decoration: none !important;
+}
+
+/* 实时预览模式下高亮块里的双向链接前面添加 icon */
+.markdown-rendered .internal-link::before {
+  margin-right: 4px;
+  margin-left: 2px;
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg t='1626093724345' class='icon' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='3856' width='200' height='200'%3E%3Cpath d='M896.5 328.5h-256c-13.3 0-24-10.7-24-24v-256c0-13.3 10.7-24 24-24s24 10.7 24 24v232h232c13.3 0 24 10.7 24 24s-10.7 24-24 24z' fill='%230A59F7' p-id='3857'%3E%3C/path%3E%3Cpath d='M896.5 1000.5h-768c-13.3 0-24-10.7-24-24v-928c0-13.3 10.7-24 24-24h512c6.4 0 12.5 2.5 17 7l256 256c4.5 4.5 7 10.6 7 17v672c0 13.3-10.7 24-24 24z m-744-48h720V314.4L630.6 72.5H152.5v880z' fill='%230A59F7' p-id='3858'%3E%3C/path%3E%3Cpath d='M704.5 792.5h-384c-13.3 0-24-10.7-24-24s10.7-24 24-24h384c13.3 0 24 10.7 24 24s-10.7 24-24 24zM704.5 632.5h-384c-13.3 0-24-10.7-24-24s10.7-24 24-24h384c13.3 0 24 10.7 24 24s-10.7 24-24 24zM704.5 472.5h-384c-13.3 0-24-10.7-24-24s10.7-24 24-24h384c13.3 0 24 10.7 24 24s-10.7 24-24 24zM448.5 312.5h-128c-13.3 0-24-10.7-24-24s10.7-24 24-24h128c13.3 0 24 10.7 24 24s-10.7 24-24 24z' fill='%230A59F7' p-id='3859'%3E%3C/path%3E%3C/svg%3E");
+  background-size: 16px 16px;
+  transform: translate(0, 3px);
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 16.8px;
+  width: 16.33px;
+}
+.markdown-rendered .internal-link:hover {
+  text-decoration: none !important; 
+}
+
+.cm-s-obsidian span.cm-link:hover {
+  text-decoration: none;
+}
+
+
+/* 修改 ur li 前面的icon */
+/* .markdown-preview-view ul > li:not(.task-list-item)::before {
+  color: rgba(0, 0, 0, .7);
+}
+.markdown-preview-view ul > li:not(.task-list-item) ul > li::marker {
+
+  content: '🔹';
+}
+
+.markdown-preview-view ul > li:not(.task-list-item)  ul > li  ul > li::marker {
+
+  content: '🔸';
+} */
+
+
+
+/* 在 > 作为备注的内容前面添加竖线 */
+.markdown-preview-view ul > li blockquote  {
+  border-left: none;
+  margin-block-start: 0;
+  padding-left: 0;
+}
+
+/* 如果去掉此项竖线线条会变粗 */
+.markdown-rendered.show-indentation-guide li > ul::before, .markdown-rendered.show-indentation-guide li > ol::before {
+  border-right: unset;
+}
+
+/* 修复 img-grid 与 li 下的引用 显示错误 */
+.markdown-preview-view ul > li blockquote p  {
+  display: block;
+}
+
+.markdown-preview-view ul li  ul {
+  margin: 0 0 10px 0;
+}
+
+.markdown-preview-view ul li  ul li > ul {
+  margin: 0 0 5px 0;
+}
+
+.markdown-preview-view .list-collapse-indicator + ul {
+  margin: 0 0 5px 0;
+}
+
+.markdown-preview-view ul li  ul li {
+  margin: 0 0 5px 0;
+}
+
+.markdown-preview-view ul li ul li:first-of-type {
+  padding-top: 5px;
+}
+
+.theme-light .cm-hmd-list-indent .cm-tab::before,
+.theme-light ul ul::before,
+.theme-light ol ul::before,
+.theme-light ul ol::before,
+.theme-light ol ol::before,
+.theme-light ul > li blockquote::before,
+.theme-light ul > li blockquote::after {
+  content:'';
+  border-left: 1px solid #dee0e3;
+  position: absolute;
+}
+
+.cm-hmd-list-indent .cm-tab::before { left: 0; top: -5px; bottom: -4px; }
+
+ul ul::before,
+li blockquote::before,
+li blockquote::after,
+ol ol::before {
+  left: -14px;
+  top: 0;
+  bottom: 0;
+}
+
+ol ul::before,
+ul ol::before {
+  left: -30px;
+  top: 0;
+  bottom: 0;
+}
+
+.theme-light li pre[class*="language-"] {
+  margin:10px 0;
+}
+
+
+
+.theme-light ul li .image-embed  img {
+  margin: 10px 0 0 0;
+}
+
+/* li 之间设置距离 */
+.markdown-preview-view ul > li {
+  margin-bottom: 2px;
+}
+
+/* ur li 标签中添加的竖线与文字居中对齐 */
+.markdown-rendered.show-indentation-guide li>ol::before, .markdown-rendered.show-indentation-guide li>ul::before {
+  left: -19px;
+}
+
+/* 任务列表中添加的竖线与选框对齐 */
+.markdown-rendered.show-indentation-guide li.task-list-item>ol::before, .markdown-rendered.show-indentation-guide li.task-list-item>ul::before {
+  left: -36px;
+}
+
+
+/* ur li 黑色圆点与文字对齐 */
+.markdown-preview-view ul > li:not(.task-list-item)::before {
+  margin-top: 15px;
+}
+
+
+/* todo list 颜色 */
+.checklist-plugin-main .group .compact > .toggle .checked, .is-flashing input[type=checkbox]:checked, input[type=checkbox]:checked {
+  background-color: unset !important;
+  border: 1px solid #2b2f36;
+  background-image: url("data:image/svg+xml,%3C?xml version='1.0' encoding='UTF-8'?%3E%3Csvg width='16' height='16' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M43 11L16.875 37L5 25.1818' stroke='%230A59F7' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.markdown-preview-view .task-list-item-checkbox{
+  box-sizing: border-box;
+  border: 1px solid #2b2f36;
+  border-radius: 2px;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  outline: none;
+  margin-right: 6px;
+  /* margin-bottom: 3px; */
+  cursor: pointer;
+  vertical-align: baseline;
+  background-color: #fff !important;
+}
+
+.markdown-preview-view ul > li.task-list-item:hover {
+  background-color: rgba(149,157,165,.1);
+}
+
+.markdown-preview-view ul > li.task-list-item.is-checked {
+  text-decoration: line-through;
+  color: rgb(143, 149, 158);
+  margin: 10px 0;
+}
+
+.markdown-preview-view ul > li.task-list-item {
+  margin: 10px 0;
+}
+
+.markdown-preview-view .contains-task-list .contains-task-list {
+  text-decoration: unset;
+}
+
+.markdown-preview-view .task-list-item p {
+  margin: 10px 0;
+}
+
+.markdown-preview-view .contains-task-list .contains-task-list::before {
+  left: 8px;
+}
+
+/* 实时预览模式下的 todo list 选框的样式 */
+input[type=checkbox] {
+  border-radius: unset;
+}
+
+/* 禁止使用 ob v1.1.9 选中状态下的默认样式*/
+input[type=checkbox]:checked:after {
+  background-color: unset;
+}
+
+/* 修复实时编辑模式下 checkbox 勾选状态下的 对勾重复 问题 */
+.markdown-source-view.mod-cm6 .task-list-item-checkbox {
+  width: 18px;
+  height: 18px;
+}
+
+
+
+
+/* 左侧文件管理器样式 */
+.nav-file-title {
+  border-radius: 0;
+}
+/* 点击左侧文件时改变文件名颜色以及背景色 */
+.nav-file-title.is-being-dragged, .nav-file-title.is-active, body:not(.is-grabbing) .nav-file-title.is-active:hover {
+  border-right: 2px solid #0A59F7;
+  background-color: rgba(241, 243, 245, .5);
+  color: #0A59F7;
+}
+/* 文件管理器中文件夹选中状态时的颜色 */
+/* .nav-folder-title.is-being-dragged {
+  background-color: rgba(241, 243, 245, .5);
+  color: #0A59F7;
+} */
+
+
+/* 顶部菜单 */
+.is-hidden-frameless.theme-dark:not(.minimal-dark-black):not(.colorful-frame):not(.minimal-light-white) .workspace-ribbon.mod-left:not(.is-collapsed), .is-hidden-frameless.theme-light:not(.minimal-light-tonal):not(.colorful-frame):not(.minimal-light-white) .workspace-ribbon.mod-left:not(.is-collapsed) {
+  --titlebar-background: #ffffff;
+}
+
+.is-hidden-frameless:not(.colorful-frame) .mod-left-split .mod-top .workspace-tab-header-container {
+  --tab-container-background: #ffffff;
+}
+
+/* 左侧菜单 */
+.workspace-ribbon {
+  background-color: #ffffff;
+}
+
+/* 左侧文件管理器 */
+.workspace-split.mod-left-split .workspace-tabs .workspace-leaf {
+  background-color: #ffffff;
+}
+.workspace-tab-container-inner {
+  background: #ffffff;
+}
+
+
+/* 右上角大纲列表样式 */
+.outline .tree-item-inner:only-child:hover {
+  background-color: rgba(241, 243, 245, .5);
+}
+.tree-item-inner:hover {
+  color: #0A59F7;
+}
+
+
+/* 编辑模式下点击右侧大纲时跳转至标题时的颜色 */
+.cm-s-obsidian span.obsidian-search-match-highlight {
+  background-color: rgba(10,89,247,.2);
+  color: #000;
+}
+/* 预览模式下点击右侧大纲时跳转至标题时的颜色 */
+.markdown-preview-view .is-flashing {
+  background-color: rgba(10,89,247,.2);
+  box-shadow: 0 0 0 0;
+}
+
+/* 点击大纲跳转到相应位置时的颜色 */
+.is-flashing {
+  background-color: #a6c0fe;
+}
+
+
+.markdown-preview-view h1:hover .heading-collapse-indicator.collapse-indicator:before  {
+  content: 'H 1';
+  color: #999999;
+  font-size: 8px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.markdown-preview-view .heading-collapse-indicator.collapse-indicator {
+  margin-left: -45px;
+}
+
+
+/* 让添加的 H2 与文字居中对齐 */
+.markdown-preview-view .heading-collapse-indicator {
+  margin-top: 12px;
+}
+
+/* 标题前面添加 h2 这样的小提示 */
+.markdown-preview-view h2:hover .heading-collapse-indicator.collapse-indicator:before  {
+  content: 'H2';
+  color: #999999;
+  font-size: 8px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.markdown-preview-view .heading-collapse-indicator.collapse-indicator {
+  margin-left: -45px;
+}
+/* 标题前面添加 h3 这样的小提示 */
+.markdown-preview-view h3:hover .heading-collapse-indicator.collapse-indicator::before  {
+  content: 'H3';
+  color: #999999;
+  font-size: 8px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.markdown-preview-view .heading-collapse-indicator.collapse-indicator {
+  margin-left: -45px;
+}
+/* 标题前面添加 h4 这样的小提示 */
+.markdown-preview-view h4:hover .heading-collapse-indicator.collapse-indicator::before  {
+  content: 'H4';
+  color: #999999;
+  font-size: 8px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.markdown-preview-view .heading-collapse-indicator.collapse-indicator {
+  margin-left: -45px;
+}
+/* 标题前面添加 h5 这样的小提示 */
+.markdown-preview-view h5:hover .heading-collapse-indicator.collapse-indicator::before  {
+  content: 'H5';
+  color: #999999;
+  font-size: 8px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.markdown-preview-view .heading-collapse-indicator.collapse-indicator {
+  margin-left: -45px;
+}
+/* 标题前面添加 h6 这样的小提示 */
+.markdown-preview-view h6:hover .heading-collapse-indicator.collapse-indicator::before  {
+  content: 'H6';
+  color: #999999;
+  font-size: 8px;
+  margin-right: 8px;
+  vertical-align: middle; 
+}
+.markdown-preview-view .heading-collapse-indicator.collapse-indicator {
+  margin-left: -45px;
+}
+
+
+.markdown-preview-view h1 {
+  /* font-size: 30px;
+  line-height: 38px; */
+  font-size: 26px;
+  line-height: 1.65;
+  font-weight: 600;
+  margin-block-start: 1em;
+}
+
+
+/* h2 字体大小 */
+.markdown-preview-view h2 {
+  /* font-size: 24px;
+  line-height: 32px;
+  font-weight: 500; 
+  margin-block-start: 40px; */
+
+  font-size: 22px;
+  line-height: 1.65;
+  font-weight: 600;
+  margin-block-start: 1em;
+}
+
+
+.markdown-preview-view h3 {
+  /* font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  margin-block-start: 32px; */
+ 
+  font-size: 20px;
+  line-height: 1.65;
+  font-weight: 600;
+  margin-block-start: 1em;
+}
+
+
+.markdown-preview-view h4 {
+  /* font-size: 18px;
+  line-height: 26px;
+  font-weight: 500; 
+  margin-block-start: 24px; */
+ 
+  font-size: 18px;
+  line-height: 1.65;
+  font-weight: 600;
+  margin-block-start: 1em;
+
+}
+
+.markdown-preview-view h5 {
+  /* font-size: 16px;
+  line-height: 24px;
+  font-weight: 500; 
+  margin-block-start: 16px; */
+ 
+  font-size: 16px;
+  line-height: 1.65;
+  font-weight: 600;
+  margin-block-start: 1em;
+}
+
+
+.markdown-preview-view h6 {
+  /* font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-block-start: 16px; */
+ 
+  font-size: 16px;
+  line-height: 1.65;
+  font-weight: 600;
+  margin-block-start: 1em;
+  color: var(--text-normal);
+}
+
+
+/* 标题上下marin */
+/* 原来的标题字体与间隔设计 */
+/* .markdown-preview-view h1, .markdown-preview-view h2, .markdown-preview-view h3, .markdown-preview-view h4, .markdown-preview-view h5, .markdown-preview-view h6 {
+  margin: 30px 0 20px 0;
+  margin-block-start: 2em;
+}
+.markdown-preview-view h2 {
+  font-size: 18px;
+}
+
+*/
+
+
+/* 自定义的高亮块 block 里面的双向链接文字颜色 */
+.markdown-preview-view mark .internal-link {
+  color: #3370ff;
+}
+
+
+/* 标题中emoji与文字之间的间隔 */
+.markdown-preview-view h1,h2,h3,h4,h5,h6 {
+  white-space: pre;
+
+}
+
+
+/* 图谱颜色 */
+.graph-view.color-fill,
+.theme-dark .graph-view.color-fill-tag,
+.theme-light .graph-view.color-fill-tag,
+.theme-dark .graph-view.color-fill-attachment,
+.theme-light .graph-view.color-fill-attachment,
+.graph-view.color-fill-focused,
+.graph-view.color-circle {
+  color: rgba(10,89,247);
+}
+.graph-view.color-line {
+  color: rgb(255,198,10,.8);
+}
+.graph-view.color-text {
+  color: rgba(0,0,0,.9);
+  opacity: 0.3;
+}
+.graph-view.color-arrow {
+  color: #ecaa03;
+  /* color: rgba(0,0,0); */
+}
+.graph-view.color-fill-unresolved {
+  color: rgba(10,89,247,.9);
+}
+.graph-view.color-fill-highlight,
+.graph-view.color-line-highlight {
+  color: rgba(10,89,247,.8);
+}
+
+
+/* 预览模式下 引用 颜色 */
+.markdown-preview-view blockquote {
+  border-left: 3px solid #443DF6;
+  /* margin: 0 0 0 6px; */
+  margin: 0 0;
+  margin-block-start: 1.2em;
+}
+
+/* 实时预览模式下 引用 的颜色 */
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before, .markdown-source-view.mod-cm6 .cm-blockquote-border:before {
+  border-left: 3px solid #443DF6;
+  /* margin: 0 0 0 6px; */
+  margin: 0 0;
+  /* margin-block-start: 1.2em; */
+}
+
+
+
+
+
+/* 编辑模式下tag样式 */
+.cm-s-obsidian span.cm-hashtag {
+  border-radius: 4px;
+}
+
+
+
+
+
+/* 更改菜单hover时出现的 提示 的颜色 */
+.tooltip {
+  color: #fff;
+  background-color: #0A59F7;
+}
+.tooltip .tooltip-arrow {
+  border-bottom: 5px solid #0A59F7;
+}
+.tooltip.mod-right .tooltip-arrow {
+  border-right: 5px solid #0A59F7;
+}
+.tooltip.mod-left .tooltip-arrow {
+  border-left: 5px solid #0A59F7;
+}
+.tooltip.mod-top .tooltip-arrow {
+  border-top: 5px solid #0A59F7;
+}
+
+
+/* 图片并列显示时设置图片之间的间隔 */
+.view-content .markdown-preview-view img {
+  margin: 1.6em auto;
+  padding-right: 30px;
+}
+/* 最后一个图片去除padding */
+.view-content .markdown-preview-view  p > .image-embed:nth-last-child(1) img{
+  padding-right: 0;
+}
+
+
+/* 代码块添加上下margin */
+.theme-light pre[class*="language-"] {
+  margin: 1.5em 0;
+}
+
+
+/* 当双向链接的类型是图片时在其前面添加 图片icon */
+.markdown-preview-view  a.internal-link[href^="image-MOC"]::before {
+  /* content: "\e6ef";
+  font-family: "iconfont"; */
+
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg t='1626092464076' class='icon' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='3121' width='200' height='200'%3E%3Cpath d='M266.42944 804.352l123.3408-136.82688a37.93408 37.93408 0 0 1 53.39136-2.90304l81.6896 72.83712a37.92384 37.92384 0 0 0 56.43776-6.76864l99.92704-145.04448a37.91872 37.91872 0 0 1 58.15808-5.12l86.33856 87.31136 66.64704 72.65792-13.9264 60.18048-67.30752 25.46176-529.20832 11.5712z' fill='%23F4CA1C' p-id='3122'%3E%3C/path%3E%3Cpath d='M814.76096 148.48H209.23904A153.26208 153.26208 0 0 0 56.32 301.74208v415.40096A153.26208 153.26208 0 0 0 209.23904 870.4h605.52192A153.26208 153.26208 0 0 0 967.68 717.13792V301.74208A153.26208 153.26208 0 0 0 814.76096 148.48z m83.456 568.65792a83.62496 83.62496 0 0 1-83.456 83.62496H209.23904a83.62496 83.62496 0 0 1-83.456-83.62496V301.74208a83.62496 83.62496 0 0 1 83.456-83.63008h605.52192a83.62496 83.62496 0 0 1 83.456 83.61984v415.40096z m-137.728-298.55744a72.42752 72.42752 0 0 0-111.4112 9.87648l-99.712 145.46432a2.8672 2.8672 0 0 1-2.14528 1.29536 2.81088 2.81088 0 0 1-2.38592-0.75264L463.28832 501.41696a72.52992 72.52992 0 0 0-102.272 5.59104l-123.0848 137.216a34.77504 34.77504 0 1 0 51.67104 46.55616l123.0848-137.216a3.03104 3.03104 0 0 1 4.28544-0.2304l81.51552 73.04192a72.41728 72.41728 0 0 0 108.1088-13.02528l99.71712-145.4592a3.03104 3.03104 0 0 1 4.66432-0.41472l86.15936 87.552a34.78016 34.78016 0 1 0 49.47456-48.896z m-316.2368-33.32608a47.00672 47.00672 0 1 0-46.90432-47.00672 46.95552 46.95552 0 0 0 46.90432 47.00672z' fill='%23595BB3' p-id='3123'%3E%3C/path%3E%3C/svg%3E");
+  background-size: 16px 16px;
+  transform: translate(0, 3px);
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 16.8px;
+  width: 16.33px;
+  margin-right: 5px;
+}
+
+
+/* ccard样式 */
+/* ccard预览时让标题前面不显示icon */
+.markdown-preview-view .cute-card-view a.internal-link[href^="inbox/"]::before {
+  background-image: unset;
+}
+
+/* inbox 里的卡片 hover 时不让其显示背景色 */
+.markdown-preview-view .cute-card-view a.internal-link[href^="inbox/"]:hover {
+  background-color: transparent;
+}
+
+h1[data-heading="inbox Overview"] {
+  display: none;
+}
+.cute-card-band .cute-card-view .thumb-color {
+  display: none;
+}
+.cute-card-band .cute-card-view {
+  height: 10rem;
+}
+/* .cute-card-band .cute-card-view:nth-child(1) {
+  background-color: #4aa58c;
+}
+.cute-card-band .cute-card-view:nth-child(1n+3) {
+
+  background-color: #4aa58c;
+}
+.cute-card-band .cute-card-view:nth-child(3n+2) {
+  background-color: #ed843c;
+}
+.cute-card-band .cute-card-view:nth-child(3n+3) {
+  background-color: #467ddb;
+} */
+
+
+.cute-card-band .cute-card-view:nth-child(n) {
+  background-color: #467ddb;
+}
+
+.cute-card-band .cute-card-view:nth-child(3n+1) {
+  background-color: #ed843c;
+}
+.cute-card-band .cute-card-view:nth-child(2n+3) {
+  background-color: #4aa58c;
+}
+.cute-card-band  .cute-card-view h1 {
+  width: 223.35px;
+  color: #fff;
+  /* margin-top: 40px; */
+  margin: 0 0;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  /* line-height: 2.5rem; */
+}
+.cute-card-band  .cute-card-view p {
+  display: none;
+}
+.cute-card-band .cute-card-view span {
+  color: rgba(220, 221, 222, .5);
+  /* margin: 20px 0; */
+  margin: 0 0;
+}
+.cute-card-band .cute-card-view .thumb {
+  display: none;
+  background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+  padding-bottom: 50%;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 10px 10px 0px 0px;
+}
+
+
+/* 分割线 */
+.theme-light .markdown-preview-view hr {
+  border-color: #F1F3F5;
+}
+
+
+
+
+
+/* 表格样式 */
+.markdown-preview-view table {
+  border: 1px solid #ebeef5;
+  border-radius: 3px;
+  transition: .2s;
+  background-color: #fff;
+  color: #606266;
+  text-indent: 1em;
+  width: 100%;
+}
+
+.markdown-preview-view table thead tr th {
+  padding: 30px 0 15px 0;
+}
+
+.markdown-preview-view th, .markdown-preview-view td {
+  border: unset;
+  border-bottom: 1px solid #ebeef5;
+}
+
+.markdown-preview-view table tbody tr td {
+  padding: 10px 0;
+}
+
+.markdown-preview-view table tbody tr td mark {
+  padding: 0;
+}
+
+.markdown-preview-view table tbody tr:nth-child(2n) {
+  background: #fafafa;
+}
+
+.markdown-preview-view table tbody tr:hover {
+  background: #f2f6fc;
+}
+
+
+/* query 样式 */
+.markdown-preview-view  .search-results-children .search-result:nth-child(2n) {
+  background: #fafafa;
+}
+.markdown-preview-view  .search-results-children .search-result:hover {
+  background: #f2f6fc;
+}
+.search-result-file-matches {
+  border: unset;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.search-result:last-child .search-result-file-matches {
+  border: unset;
+}
+
+.tree-item-inner, .search-result-file-title {
+  padding: 8px;
+}
+.search-result-file-matched-text {
+  background-color: transparent;
+}
+
+/* dataview query 样式 */
+.internal-query .search-result-container {
+  background-color: unset;
+  border-radius: unset;
+}
+.internal-query .internal-query-header {
+  border-left: 1px solid #dee0e3;
+  border-right: 1px solid #dee0e3;
+}
+.search-result-file-matches {
+  box-shadow: none;
+}
+.theme-dark .internal-query .internal-query-header {
+  border-left: 1px solid var(--background-modifier-border);
+  border-right: 1px solid var(--background-modifier-border);
+}
+
+
+
+/* 类 github 风格的 badge 样式设置 */
+a[href*="obsidian://search"] {
+  background-image: unset
+}
+
+
+
+/* badge 图片样式 */
+.view-content .markdown-preview-view a  img {
+  margin: 0 6px 0 0 !important;
+  padding: 0 0;
+  cursor: pointer;
+}
+.view-content .markdown-preview-view img[referrerpolicy='no-referrer']:active {
+  cursor: pointer;
+  position: relative;
+  top: 0;
+  left: 0;
+  right:0;
+  width: auto;
+  height: 20px;
+  display: inline-block;
+  padding: 0;
+  
+}
+
+
+/* 标签样式 */
+.frontmatter-container .tag, .tag {
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  white-space: nowrap;
+  max-width: 100%;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1rem;
+  margin-top: 2px;
+}
+
+
+
+
+
+/* 暗黑模式下样式修改 */
+.theme-dark .workspace-ribbon {
+  background-color: var(--background-secondary-alt);
+}
+
+.is-hidden-frameless.theme-dark:not(.minimal-dark-black):not(.colorful-frame):not(.minimal-light-white) .workspace-ribbon.mod-left:not(.is-collapsed), .is-hidden-frameless.theme-light:not(.minimal-light-tonal):not(.colorful-frame):not(.minimal-light-white) .workspace-ribbon.mod-left:not(.is-collapsed) {
+  --titlebar-background: unset;
+}
+
+.is-hidden-frameless:not(.colorful-frame) .mod-left-split .mod-top .workspace-tab-header-container {
+  --tab-container-background: unset;
+}
+
+.theme-dark .titlebar-inner {
+  background-color: unset;
+}
+
+.theme-dark .mod-horizontal .workspace-leaf {
+  background-color: unset;
+}
+
+
+.theme-dark .workspace-tab-container-inner {
+  background-color: unset;
+}
+
+.theme-dark  .workspace-split:not(.mod-right-split) .workspace-tabs {
+  background-color: var(--background-secondary-alt);
+}
+
+.theme-dark  .workspace-split.mod-left-split .workspace-tabs .workspace-leaf {
+  background-color: unset;
+}
+
+.theme-dark .titlebar-button {
+  color: unset;
+}
+
+.theme-dark .graph-view.color-text {
+  color: rgba(255, 255, 255, .9);
+  opacity: 0.3;
+}
+
+.theme-dark .markdown-preview-view  mark {
+  background-color: transparent !important;
+  color: rgba(255, 255, 255, .9) !important;
+}
+
+.theme-dark .markdown-preview-view hr {
+  border-color:var(--background-modifier-border);
+}
+
+
+/* 暗黑模式下表格样式 */
+.theme-dark .markdown-preview-view table {
+  border:  1px solid var(--background-modifier-border);
+  border-radius: 3px;
+  transition: .2s;
+  background-color: unset;
+  color: unset;
+  text-indent: 1em;
+  width: 100%;
+}
+
+.theme-dark .markdown-preview-view table thead tr th {
+  padding: 30px 0 15px 0;
+}
+
+.theme-dark .markdown-preview-view th, .markdown-preview-view td {
+  border: unset;
+  border-bottom: unset;
+}
+
+.theme-dark .markdown-preview-view table tbody tr td {
+  padding: 10px 0;
+}
+
+.theme-dark .markdown-preview-view table tbody tr td mark {
+  padding: 0;
+}
+
+.theme-dark .markdown-preview-view table tbody tr:nth-child(2n) {
+  background: unset;
+}
+
+.theme-dark .markdown-preview-view table tbody tr:hover {
+  background: rgba(242,246,252, .2);
+}
+
+
+/* dataview 在暗黑模式下的样式 */
+.theme-dark .table-view-table > thead > tr, .table-view-table > tbody > tr {
+  border-bottom: 1px solid rgba(187, 191, 196,.1);
+}
+
+
+/* 暗黑 query 样式 */
+.theme-dark .markdown-preview-view  .search-results-children .search-result:nth-child(2n) {
+  background: unset;
+}
+.theme-dark  .markdown-preview-view .search-results-children .search-result:hover {
+  background: rgba(242,246,252, .2);
+}
+
+.theme-dark  .search-result-file-matches {
+  border-bottom: 1px solid rgba(187, 191, 196,.1);
+}
+
+.theme-dark  .search-result:last-child .search-result-file-matches {
+  border-bottom: unset;
+}
+
+
+/* 暗黑模式下 hr 颜色 */
+.theme-dark .markdown-preview-view hr {
+  border-color:var(--background-modifier-border);
+}
+
+
+.theme-dark .cm-hmd-list-indent .cm-tab::before,
+.theme-dark ul ul::before,
+.theme-dark ol ul::before,
+.theme-dark ul ol::before,
+.theme-dark ol ol::before,
+.theme-dark ul > li blockquote::before,
+.theme-dark ul > li blockquote::after  {
+  content:'';
+  border-left: 1px solid #363636;
+  position: absolute;
+}
+
+.theme-dark ul > li::marker, ol > li::marker {
+  color: #e0e0e0;
+}
+
+.theme-dark li pre[class*="language-"] {
+  margin:10px 0;
+}
+
+.theme-dark ul li .image-embed  img {
+  margin: 10px 0 0 0;
+}
+
+
+/* 暗黑模式下高亮样式 */
+.theme-dark .cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight {
+  color: #fff !important;
+  font-weight: 600;
+}

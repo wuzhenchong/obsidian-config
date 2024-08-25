@@ -1,0 +1,27 @@
+{
+  "uuid": "99xv3upjsvdokf2zt771jh",
+  "gates": {
+    "aHR0cHM6Ly92LmZsb21vYXBwLmNvbS9taW5l": {
+      "id": "aHR0cHM6Ly92LmZsb21vYXBwLmNvbS9taW5l",
+      "title": "flomo",
+      "icon": "<svg viewBox=\"0 0 100 100\"><image href=\"https://fetch-favicon.fly.dev/favicon/aHR0cHM6Ly92LmZsb21vYXBwLmNvbS9taW5l\" height=\"100\" width=\"100\" /></svg>",
+      "hasRibbon": true,
+      "position": "center",
+      "profileKey": "open-gate",
+      "url": "https://v.flomoapp.com/mine",
+      "zoomFactor": 1,
+      "userAgent": ""
+    },
+    "aHR0cHM6Ly9kaWRhMzY1LmNvbS93ZWJhcHAjcS9hbGwvdG9kYXk=": {
+      "id": "aHR0cHM6Ly9kaWRhMzY1LmNvbS93ZWJhcHAjcS9hbGwvdG9kYXk=",
+      "title": "滴答清单",
+      "icon": "<svg viewBox=\"0 0 100 100\"><image href=\"https://fetch-favicon.fly.dev/favicon/aHR0cHM6Ly9kaWRhMzY1LmNvbS93ZWJhcHAjcS9hbGwvdG9kYXk%3D\" height=\"100\" width=\"100\" /></svg>",
+      "hasRibbon": true,
+      "position": "center",
+      "profileKey": "open-gate",
+      "url": "https://dida365.com/webapp#q/all/today",
+      "zoomFactor": 1,
+      "userAgent": ""
+    }
+  }
+}

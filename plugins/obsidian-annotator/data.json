@@ -1,0 +1,20 @@
+{
+  "deafultDarkMode": false,
+  "darkReaderSettings": {
+    "brightness": 150,
+    "contrast": 85,
+    "sepia": 0
+  },
+  "debugLogging": false,
+  "customDefaultPath": "E:\\ownCloud-chong\\1看论文\\",
+  "epubSettings": {
+    "readingMode": "pagination",
+    "fontSize": 100
+  },
+  "annotationMarkdownSettings": {
+    "annotationModeByDefault": true,
+    "includePrefix": true,
+    "highlightHighlightedText": true,
+    "includePostfix": true
+  }
+}

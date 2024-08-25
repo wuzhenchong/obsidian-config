@@ -1,0 +1,224 @@
+{
+  "version": 2,
+  "projects": [
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [
+        "模板/学习任务模板.md"
+      ],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "2 学习",
+          "recursive": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "fieldConfig": {
+              "path": {
+                "hide": true
+              }
+            }
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "c5495ee1-51b9-427f-82a2-fb750aca959b",
+          "name": "Table",
+          "type": "table"
+        },
+        {
+          "config": {
+            "coverField": "image",
+            "fitStyle": "contain"
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "8408e977-a17e-434b-a815-3555b84fb311",
+          "name": "Gallery",
+          "type": "gallery"
+        }
+      ],
+      "id": "3a736013-0d7f-44a4-97f5-32f919564f9d",
+      "name": "2 学习"
+    },
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [
+        "模板/留学生作业模板.md"
+      ],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "留学生作业",
+          "recursive": false
+        }
+      },
+      "newNotesFolder": "留学生作业",
+      "views": [
+        {
+          "config": {
+            "fieldConfig": {
+              "path": {
+                "hide": true
+              },
+              "单号": {
+                "width": 118
+              },
+              "结算表日期": {
+                "width": 149
+              },
+              "完成": {
+                "width": 114
+              },
+              "联系人": {
+                "width": 112
+              },
+              "学校": {
+                "hide": true
+              },
+              "专业": {
+                "hide": true
+              },
+              "name": {
+                "width": 165
+              },
+              "稿费": {
+                "width": 114
+              }
+            },
+            "orderFields": [
+              "name",
+              "单号",
+              "稿费",
+              "结算表日期",
+              "联系人",
+              "完成",
+              "作业内容",
+              "详细要求",
+              "due date"
+            ]
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "553813c3-89e4-4c73-a275-682cd4ba7984",
+          "name": "Table",
+          "type": "table"
+        },
+        {
+          "config": {
+            "groupByField": "联系人",
+            "priorityField": "",
+            "includeFields": [],
+            "columns": {
+              "Nancy": {
+                "weight": 0
+              },
+              "john": {
+                "weight": 1
+              },
+              "No status": {
+                "weight": 2
+              }
+            }
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "b3fee12d-b754-49fc-b999-ceec394460e8",
+          "name": "Board",
+          "type": "board"
+        }
+      ],
+      "id": "faf22dea-b510-4673-b44b-e6b768bbbd59",
+      "name": "留学生作业"
+    },
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "5 项目管理",
+          "recursive": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "fieldConfig": {
+              "path": {
+                "hide": true
+              }
+            }
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "bc1e565e-ecb9-4ef8-aa56-3fda7187f50b",
+          "name": "Table",
+          "type": "table"
+        }
+      ],
+      "id": "938a16d3-b9f4-44bb-8259-2231d9b78ae1",
+      "name": "项目"
+    }
+  ],
+  "archives": [],
+  "preferences": {
+    "projectSizeLimit": 1000,
+    "frontmatter": {
+      "quoteStrings": "PLAIN"
+    },
+    "locale": {
+      "firstDayOfWeek": "default"
+    },
+    "commands": [],
+    "linkBehavior": "open-editor"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "openViewOnStartup": true,
+  "filterEmpty": true,
+  "excludePaths": [],
+  "includePaths": [],
+  "useIncludeTags": true,
+  "taskIncludeTags": [
+    "#task",
+    "#科研",
+    "#学习",
+    "#锻炼"
+  ],
+  "fileIncludeTags": [],
+  "useExcludeTags": false,
+  "taskExcludeTags": [],
+  "fileExcludeTags": [],
+  "styles": [
+    "style1"
+  ],
+  "dailyNoteFolder": "1 日记/2024",
+  "dailyNoteFormat": "YYYY-MM-DD",
+  "sectionForNewTasks": "## Tasks",
+  "hideTags": [
+    "#task"
+  ],
+  "forward": true,
+  "sort": "(t1, t2) => t1.order <= t2.order ? -1 : 1",
+  "taskStatusOrder": [
+    "overdue",
+    "due",
+    "scheduled",
+    "start",
+    "process",
+    "unplanned",
+    "done",
+    "cancelled"
+  ],
+  "dateFormat": "dddd, MMM, D",
+  "inbox": "Inbox.md",
+  "taskFiles": [],
+  "tagColorPalette": {
+    "#TODO": "#339988",
+    "#TEST": "#998877",
+    "#锻炼": "#02cabd",
+    "#科研": "#bd0000",
+    "#学习": "#b37100"
+  },
+  "useCounters": true,
+  "counterBehavior": "Focus",
+  "useQuickEntry": false,
+  "entryPosition": "today",
+  "useYearHeader": true,
+  "useRelative": false,
+  "useRecurrence": true,
+  "usePriority": true,
+  "useTags": true,
+  "useFileBadge": true,
+  "useSection": false,
+  "hideStatusTasks": [
+    "x",
+    "-"
+  ],
+  "defaultTodayFocus": true,
+  "defaultFilters": "todoFilter",
+  "useBuiltinStyle": true,
+  "convert24HourTimePrefix": false
+}
